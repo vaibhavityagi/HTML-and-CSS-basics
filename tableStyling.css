@@ -1,0 +1,13 @@
+#list{
+	list-style-type: square;
+	border: 5px dashed blue;
+	padding-bottom: 20px;
+}
+
+.lists{
+	list-style-type: decimal; /* this command is over written by -style-image command */
+	border: 5px solid blue;
+	list-style-position: inside; /* this property takes two values: inside and outside */
+	padding-bottom: 20px;
+	list-style-image: url("images/tick.png")
+}

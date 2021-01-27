@@ -1,0 +1,121 @@
+/**{
+    margin: 0%;
+    padding: 0%;
+}*/
+
+body{
+    background-color: lightyellow;
+    color: black;
+
+    font-family: 'Courier New', Courier, monospace;
+    /* default font-size is 16px */
+    font-size: 18px;
+    font-weight: normal;
+    
+    /* Easier way to do the above font- thing 
+    font: normal 20px 'Courier New', Courier, monospace;*/
+
+    line-height: 1.3em;
+    
+    margin: 0%;
+}
+
+a{
+    text-decoration: none;
+    color: palevioletred;
+}
+
+a:hover{
+    color: red;
+}
+
+a:active{
+    color: green;
+}
+
+a:visited{
+    color: #000;
+}
+
+.container{
+
+    width: 80%;
+    margin: auto;
+}
+
+.article1{
+    background-color: #333333;
+    color: #fff;
+    
+    border-right: 5px solid red;
+    border-left: 5px solid red;
+    border-top: 5px solid red;
+    border-bottom: 5px solid red;
+    /* Easier way to set border (same as above)*/
+    border: 5px solid red;
+
+    border-bottom-width: 7px;
+    border-top-width: 7px;
+    /* another way to do the same as*/
+    border-width: 7px 5px;
+
+    border-right-style: dashed;
+    border-left-style: dashed;
+    /* another way to do the same as*/
+    border-style: solid dashed;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    /* another way to do the same as above*/
+    padding: 20px 20px 20px 20px;/* top right bottom left*/
+    /* another way to do the same as above*/
+    padding: 20px 20px;
+    /* Easier way to do the same as above*/
+    padding: 20px;
+
+    margin-top: 8px;
+
+    border-radius: 10px;
+}
+
+.article1 h2{
+    font-weight: 900;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-transform: uppercase;
+    letter-spacing: normal;
+    word-spacing: 0.1em;
+}
+
+.article1 small{
+    font-style: italic;
+    font-size: 14px;
+}
+
+.article2{
+    border: 5px double #333333;
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 0 20px;
+    background-color: goldenrod;
+}
+
+.article3{
+    border: 5px ridge green;
+    padding: 0 20px 20px 20px;
+    border-radius: 10px;
+    background-color: coral;
+}
+
+.links{
+    background-color: turquoise;
+    border: 2px solid #000;
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 0 20px;
+}
