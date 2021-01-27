@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+    <head>
+        <title>All About Forms</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="forms creation">
+        <meta name="author" content="Vaibhavi Tyagi">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <nav>
+            <a href="index.html">Index Page</a>
+            <br>
+            <a href="page.html">First Webpage</a>
+            <br>
+            <a href="forms.html">Form Practice Webpage</a>
+        </nav>
+
+    </head>
+
+    <body>
+        <form action="User.html" method="POST" target="_self" autocomplete="on">
+            <h2>SIGN UP</h2>
+                <fieldset class="Sign-UP">
+                    <legend>Personalia:</legend>
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" minlength="5" maxlength="15" value="" required autofocus>
+                    <br><br>
+                    <label for="pw">Password</label>
+                    <input type="password" id="pw" name="passwrd" minlength="3" maxlength="10" value="" required>
+                    <br><br>
+                    <input type="submit" value="Submit">
+                    <br><br>
+                    <button type="button">Already have an account</button>
+                </fieldset>
+        </form>
+
+        <form action="burgerOrder.html" method="POST">
+            <h2>Create a burger!</h2>
+
+            <section class="protein">
+                <label for="protein">What kind of protein would you like?</label>
+                <br>
+                <input type="text" id="protein" name="protein" placeholder="22g">
+            </section>
+
+            <br>
+
+            <section class="patty">
+                <label for="patties">How many patties would you like?</label>
+                <br>
+                <input type="number" name="patties" value="1" id="patties" min="1" max="10" step="1" >
+            </section>
+
+            <br>
+
+            <section class="doneness">
+                <label for="cookPatty">How do you want your patty cooked</label>
+                <br>
+                <span>Rare</span>
+                <input type="range" id="cookPatty" name="cookPatty" min="1" max="5" step="0.5">
+                <span>Well-Done</span>
+            </section>
+
+            <br>
+
+            <section class="toppings">
+                <span>What toppings would you like?</span>
+                <br>
+                <input type="checkbox" id="lettuce" name="topping"> 
+                <label for="lettuce">Lettuce</label>
+                <input type="checkbox" id="tomato" name="topping"> 
+                <label for="tomato">Tomato</label>
+                <input type="checkbox" id="onion" name="topping"> 
+                <label for="onion">Onion</label>    
+            </section>
+
+            <br>
+
+            <section class="addCheese">
+                <span>Would you like to add cheese?</span>
+                <br>
+                <input type="radio" id="yes" name="yes/no">
+                <label for="yes">Yes</label>
+                <input type="radio" id="no" name="yes/no">
+                <label for="no">No</label>
+            </section>
+
+            <br>
+
+            <section class="bun-type">
+                <label for="bun">What type of bun would you like?</label>
+                <br>
+                <select id="bun" name="bun">
+                    <option value="sesame">Sesame</option>
+                    <option value="pretzel" selected>Pretzel</option>
+                    <option value="potato">Potato</option>
+                    <option value="regular">Regular</option>
+                </select>
+            </section>
+
+            <br>
+
+            <section class="sauce-selection">
+                <label for="sauce">What type of sauce would you like?</label>
+                <br>
+                <input list="sauces" id="sauce" name="sauce">
+                <datalist id="sauces">
+                    <option value="ketchup"></option>
+                    <option value="mayo"></option>
+                    <option value="musturd"></option>
+                </datalist>
+            </section>
+
+            <br>
+
+            <section class="additional">
+                <label for="instructions">Anything else you want to enter?</label>
+                <br>
+                <textarea id="instructions" name="instructions" rows="3" cols="40"></textarea>
+            </section>
+
+            <br>
+
+            <section class="submission">
+                <input type="submit" value="Submit">
+            </section>
+
+        </form>
+        
+    </body>
+</html>

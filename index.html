@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+
+<!-- IT IS A MESSY CODE -->
+<!-- ALL of the basics -->
+
+
+<html lang="en-IN">
+    <head>
+        <!-- title is shown in tab name -->
+        <title>HTML learning</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="index">
+        <meta name="author" content="Vaibhavi Tyagi">
+        <meta name="keywords" content="HTML, index">
+        <!-- Refresh page every 30 sec -->
+        <meta http-equiv="refresh" content="30">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="tableStyling.css">
+
+    </head>
+    <body>
+        <nav class="main-nav">
+            <a href="page.html">First Webpage</a> |
+            <a href="table.html">Click to see tables</a> |
+            <a href="forms.html">Form Practice Webpage</a>
+            <br>
+        </nav>
+        <hr>
+        <nav class="sec-nav">
+            <a href="#poem">Jump to the poem</a><br>
+            <a href="#list">Jump to the lists section</a><br>
+            <a href="#table1">Jump to the firt table</a><br>
+            <a href="#form1">Jump to the trial form</a><br>
+            <a href="#form2">Jump to the registration form</a><br>
+            <a href="#media">Jump to the media section</a>
+        </nav>
+        <!-- Headings (keeps getting smaller by default) -->
+        <!-- title="" whtever we put in title attribute is shown on the webpage when we hover cursor over tht part (global attr) -->
+        <h1 title="This is the most important heading">Heading One</h1>
+        <h2>Heading Two</h2>
+        <h3>Heading Three</h3>
+        <h4>Heading Four</h4>
+        <h5>Heading Five</h5>
+        <h6>Heading Six</h6>
+
+        <!-- Paragraph -->
+        <p title="This is the first paragraph">
+            <!-- <strong> or <b> by default bolds tht content -->
+            <!-- <em> or <i> by default makes the content inside it italic -->
+            <!-- <a> this tag is to create links -->
+            <!-- target attribute when given the value as _blank opens the link in a new tab -->
+            <!-- target attribute when given the value as _self opens the link in the same tab -->
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, eligendi.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            <a href = "https://www.W3Schools.com" target = "_blank">Nostrum id nisi ipsa </a><!--links can have title attribute-->
+            natus placeat exercitationem laudantium tempora vero accusantium libero!
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Quae ex, est cumque deleniti repellat quia, doloremque vel enim, suscipit maiores reiciendis aliquam reprehenderit iusto?
+            <em>Tempore incidunt ipsa quas natus ratione?</em>
+        </p>
+        <p>
+            <strong>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam, non.</strong>
+        </p>
+
+        <!-- mailto: protocol opens up mail with the provided address as the recepient -->
+        <!-- ?Subject= after mail address also adds the subject in the mail -->
+        <a href="mailto:vaibhavityagi5@gmail.com">Click here to open mail</a>
+        <p><a href="mailto:vaibhavityagi5@gmail.com?Subject=Via HTML page">Click here to open mail with subject</a></p>
+
+        <!-- downloadable files through links. download attr also works without a value -->
+        <a href="downloadable.txt" download="fromWebpage">Click to download</a>
+
+        <!-- <mark> element defines marked/highlighted text -->
+        <!-- The HTML <del> or <s>(stands for strike) element defines deleted/removed text. -->
+        <!-- The HTML <ins> element defines inserted/added text. <u>(underline tag) same job -->
+        <!-- The HTML <sub> element defines subscripted text. -->
+        <!-- The HTML <sup> element defines superscripted text. -->
+        <p>
+            <mark>Lorem ipsum</mark> <sub>dolor</sub><sup> sit</sup>. <del>Lorem ipsum dolor, adipisicing elit.</del>
+            <ins>sit amet consectetur</ins>
+        </p>
+
+        <!-- The pre tag preserves both spaces and line breaks (The HTML <pre> element defines preformatted text.) -->
+        <h4 id="poem">Poem</h4>
+        <pre title="This is a poem">
+            My Bonnie lies over the ocean.
+
+            My Bonnie lies over the sea.
+
+            My Bonnie lies over the ocean.
+
+            Oh, bring back my Bonnie to me.
+        </pre>
+
+        <!--Lists-->
+        <!-- <ul> for unordered lists and <ol> for ordered lists -->
+        <ul id="list">
+            <h2>List 1 (unordered)</h2>
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <li>List item 3</li>
+            <li>List item 4</li>
+        </ul>
+        <ol type="i" class="lists">   <!-- Ordered lists can have start attribute -->
+            <h2>List 2 (ordered)</h2>
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <li>List item 3</li>
+            <li>List item 4</li>
+            <li>List item 5</li>
+        </ol>
+        <dl class="lists">
+            <h2>List 3 (descriptive)</h2>
+            <dt>Pen</dt>
+                <dd>-'Kalam'</dd>
+            <dt>Notebook</dt>
+                <dd>-'Pustak'</dd>
+        </dl>
+        <!-- Creating a table -->
+        <table id="table1">
+            <thead>
+                <caption><h2>Data of students</h2></caption>
+                <tr>
+                    <th>Addmission No</th>
+                    <th>Name</th>
+                    <th>Class</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>012123</td>
+                    <td>Jessica</td>
+                    <td>XII</td>
+                </tr>
+                <tr>
+                    <td>012345</td>
+                    <td>Spencer</td>
+                    <td>XI</td>
+                </tr>
+                <tr>
+                    <td>054367</td>
+                    <td>Hanna</td>
+                    <td>XII</td>
+                </tr>
+            </tbody>
+         </table>
+
+        <br>     <!-- br is line break, pushes the material down-->
+        <hr>     <!-- hr draws a line across the screen -->
+
+         <!-- Creating Form -->
+         <form action = "submittion.js" method="POST" id="form1" autocomplete="on">
+             <h2>Trial Form</h2>
+             <div>
+                 <label>First Name</label>
+                 <input type="text" name="firstName" placeholder="Jane" autofocus>
+             </div>
+
+             <br>
+
+             <div>
+                 <label>Last Name</label>
+                 <input type="text" name="lastname" placeholder="Doe">
+             </div>
+             
+             <br>
+
+             <div>
+                 <label>Age</label>
+                 <input type="number" name="age" value="19" min="13" max="60">
+             </div>
+
+             <br>
+
+             <div>
+                 <label>Phone number</label>
+                 <input type="tel" name="phoneNo" placeholder="+91xxxxxxxxxx">
+             </div>
+
+             <br>
+
+             <div>
+                 <label>Address</label>
+                 <textarea name = "address"></textarea>
+             </div>
+
+             <br>
+
+             <div>
+                 <label>Email</label>
+                 <input type="email" name="email" placeholder="name@something.com" multiple>
+             </div>
+
+             <br>
+
+             <div>
+                 <label>Gender</label>
+                 <select name="gender" size="3" multiple>
+                     <option value="male">Male</option>
+                     <option value="female">Female</option>
+                     <option value="other">Other</option>
+                 </select>
+             </div>
+
+             <br>
+
+             <div>
+                 <label>Date of birth</label>
+                 <input type="date" name="birth">
+             </div>
+
+             <br>
+
+             <div>
+                 <label>I am not a robot</label>
+                 <input type="checkbox" name="not a robot" disabled>
+             </div>
+
+             <br>
+
+             <div>
+                 <label>I agree with terms and conditions</label>
+                 <input type="checkbox" name="terms">
+                 <br>
+                 <a href="https://www.google.com">
+                    Terms and Conditions
+                </a>
+             </div>
+
+             <br>
+
+             <input type="submit" name="submit" value="SUBMIT">
+         </form>
+
+         <!-- Buttons outside form -->
+         <br>
+         <button type="button">Click to know more about us</button>
+
+         <hr>
+
+         <form action="form2.js" method="POST" id="form2">
+             <h2>Registration Form </h2>
+
+             <div>
+                 <label>First Name      </label>
+                 <input type="text" name="firstName">
+             </div>
+             <br>
+             <div>
+                 <label>Last Name</label>
+                 <input type="text" name="lastName">
+             </div>
+             <br>
+             <div>
+                 <label for="nickName">Nick Name</label>
+                 <input type="text" name="nickName" id="nickName" placeholder="Second name" readonly>
+             </div>
+             <br>
+             <div>
+                 <label>e-mail</label>
+                 <input type="email" name="email">
+             </div>
+             <br>
+             <div>
+                 <label>Password</label>
+                 <input type="password" name="password">
+             </div>
+             <br>
+             <div>
+                <label>Re-enter Password</label>
+                <br>
+                <input type="password" name="rePassword">
+             </div>
+             <br>
+             <div>
+                 <label>Date of Birth</label>
+                 <input type="date" name="birthday">
+             </div>
+             <br>
+             <div>
+                 <label>Gender:</label>
+                 <label>Male</label>
+                 <input type="checkbox" name="male">
+                 <label>Female</label>
+                 <input type="checkbox" name="female">
+                 <label>Others</label>
+                 <input type="checkbox" name="others">
+             </div>
+             <br>
+             <div>
+                 <label>Mobile</label>
+                 <select>
+                     <option value="+91">+91</option>
+                 </select>
+                 <input type="tel" name="mobile">
+             </div>
+             <br>
+             <div>
+                 <label>Address</label>
+                 <textarea name="address"></textarea>
+             </div>
+             <br>
+             <div>
+                 <label>Attach documents here</label>
+                 <br>
+                 <input type="file" name="doc" multiple>
+             </div>
+             <br>
+             <input type="submit" name="submit">
+             <input type="reset" name="reset">
+         </form>
+
+         <hr>
+
+        <div id="media">
+            <!-- image insertion (img tag is self closing) -->
+            <a href="images/sample.png">
+                <img src="images/sample.png" alt="My Logo" width="400">
+            </a>
+            <br>
+            <figure>
+                <a href="images/sample2.jpg">
+                    <img src="images/sample2.jpg" alt="Bird image" width="160">
+                </a>
+                <figcaption>It is is a sample image of bird</figcaption><!--it is a caption and it moves wherever the image goes-->
+            </figure>
+            <br>
+
+            <!-- Quotation Tags -->
+            <p>Blockquote</p>
+            <!-- Browsers insert indentation with blockquote -->
+            <blockquote cite="https://www.google.com">
+                Birds are a group of warm-blooded vertebrates constituting the class Aves,
+                characterized by feathers, toothless beaked jaws, the laying of hard-shelled eggs,
+                a high metabolic rate, a four-chambered heart, and a strong yet lightweight skeleton.
+            </blockquote>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quaerat?<abbr title="Hyper Text Markup Language">HTML</abbr>
+            </p>
+
+            <!-- Browsers usually insert quotation marks around the q element. -->
+            <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+
+            <!-- Bi directional ovveride -->
+            <p>If your browser supports <mark>bi-directional override (bdo)</mark>, the next line will be written from right to left (rtl):</p>
+            <bdo dir="rtl">This line will be <bdi>written</bdi> from right to left</bdo>
+            <p>If your browser supports bi-directional override (bdo), the next line will be written from left to right (ltr):</p>
+            <bdo dir="ltr">This line will be written from left to right.</bdo>
+
+            <br><br>
+
+            <!-- The HTML address element defines contact information (author/owner) of a document or article. -->
+            <address>
+                Written by: Vaibhavi Tyagi
+                <br>
+                Contact me on: vaibhavityagi5@gmail.com
+            </address>
+
+
+            <hr>
+
+            <figure>
+                <!-- video -->
+                <a href="videos/sample.mp4">
+                    <video src="videos/sample.mp4" poster="images/thumb.png" loop controls>Browser does not support video player</video>
+                </a>
+                <hr>
+                <!-- audio -->
+                <audio src="videos/sampleAudio.mp3" controls loop></audio>
+                <hr>
+                <!-- gif -->
+                <embed src="videos/sample.gif">
+                <img src="videos/sample2.gif" alt="Computer man">
+            </figure>
+            <hr>
+
+            <!-- image map -->
+            <h3>Image map</h3>
+            <p>Click on the computer, the phone, or the cup of coffee to go to a new page and read more about the topic:</p>
+            <img src="images/workplace.jpg" alt="myWorkspace" usemap="#workmap"  width="400" height="379">
+            <map name="workmap">
+                <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.html">
+                <area shape="circle" coords="290,172,333,250" alt="Mobile Phone" href="phone.html">
+                <area shape="rect" coords="337,300,44" alt="Coffee" href="coffee.html">
+            </map>
+
+            <hr>
+
+        </div>
+
+        <!-- 
+            Some other semantic tags
+            <details>	Defines additional details that the user can view or hide
+            <summary>   Defines a visible heading for a <details> element. It is nested inside details tag
+            <main>	Specifies the main content of a document
+            <time>	Defines a date/time
+        -->
+
+        <!-- Usage of details tag -->
+        <details>
+            <summary>Best Friends</summary>
+            <p>Kashish Gupta</p>
+            <p>Kritika Rawat</p>
+            <p>Mitali Jain</p>
+        </details>
+
+        <hr>
+
+        <!-- embedding any other website/ web pg -->
+        <iframe src="page.html" frameborder="0" width="1340" height="2000"></iframe>
+        
+    </body>
+</html>
